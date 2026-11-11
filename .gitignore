@@ -1,0 +1,46 @@
+﻿# ==============================================================================
+# Unreal Engine 5 - Clean Source & Config Version Control Rules
+# Prepared strictly as generic tooling configuration prior to Contest Period.
+# ==============================================================================
+
+# UE5 Generated & Intermediate Directories
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+PackagedBuilds/
+Dist/
+
+# Plugin Build & Cache Artifacts (Preserve Plugin Source & .uplugin descriptors)
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+Plugins/**/Saved/
+Plugins/**/DerivedDataCache/
+
+# Visual Studio, Rider & VS Code Workspace Artifacts
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.opendb
+*.sdf
+*.VC.db
+*.VC.opendb
+.vsconfig
+
+# macOS / Linux / Windows OS Artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# Build Symbols, Crash Dumps & Packaged Archives
+*.pdb
+*.dmp
+*.zip
+*.7z
+*.rar
+*.log

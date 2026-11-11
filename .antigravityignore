@@ -1,0 +1,57 @@
+﻿# ==============================================================================
+# AI Context Poisoning Shield (.antigravityignore / .cursorignore)
+# Keeps LLM token windows focused exclusively on Source/, Config/, and Docs.
+# ==============================================================================
+
+# Engine & Compiler Output
+Binaries/**
+Build/**
+DerivedDataCache/**
+Intermediate/**
+Saved/**
+PackagedBuilds/**
+Dist/**
+
+# Generated Unreal Header Tool (UHT) Boilerplate
+**/*.generated.h
+**/*.gen.cpp
+
+# Binary Unreal Content & Raw Imported Media (Never index binary assets)
+Content/**/*.uasset
+Content/**/*.umap
+Content/**/*.ubulk
+Content/**/*.uexp
+**/*.fbx
+**/*.glb
+**/*.gltf
+**/*.obj
+**/*.blend
+**/*.blend1
+**/*.wav
+**/*.ogg
+**/*.mp3
+**/*.flac
+**/*.png
+**/*.tga
+**/*.exr
+**/*.hdr
+**/*.mp4
+**/*.mov
+
+# Third-Party & Bridge Plugin Internals (Index only project Source/ by default)
+Plugins/**/Binaries/**
+Plugins/**/Intermediate/**
+Plugins/**/Resources/**
+Plugins/**/ThirdParty/**
+Plugins/**/Content/**
+
+# IDE, Git & Packaging Output
+.git/**
+.vs/**
+.vscode/**
+.idea/**
+*.sln
+*.vsconfig
+*.pdb
+*.zip
+*.log
